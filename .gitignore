@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+*project
+*iml
+.settings
+*classpath
+*.class
+.idea
+*.war
+*.jar
+*mymetadata
+*nb-configuration.xml
+*target*
+!.gitconfig
+!.gitignore
