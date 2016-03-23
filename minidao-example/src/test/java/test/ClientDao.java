@@ -30,21 +30,21 @@ public class ClientDao {
 //		List<Map> list =  employeeDao.getAllEmployees(employee);
 //		long end_date = System.currentTimeMillis();
 //		System.out.println("MiniDao Sql 耗时: "+(end_date-begin_date)+" 毫秒");
-//		
-//		
-//		
+//
+//
+//
 //		long begin_date1 = System.currentTimeMillis();
 //		List<Map> list1 =  employeeDao.getAllEmployees(employee);
 //		long end_date1 = System.currentTimeMillis();
 //		System.out.println("MiniDao Sql 耗时: "+(end_date1-begin_date1)+" 毫秒");
-//		
-//		
-//		
+//
+//
+//
 //		long begin_date2 = System.currentTimeMillis();
 //		List<Map> list2 =  employeeDao.getAllEmployees(employee);
 //		long end_date2 = System.currentTimeMillis();
 //		System.out.println("MiniDao Sql 耗时: "+(end_date2-begin_date2)+" 毫秒");
-//		
+//
 //		long begin_date3 = System.currentTimeMillis();
 //		List<Map> list3 =  employeeDao.getAllEmployees(employee);
 //		long end_date3 = System.currentTimeMillis();

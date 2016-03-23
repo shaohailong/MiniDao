@@ -26,7 +26,7 @@ public class JeecgDemoDaoJunit extends SpringTxTestCase {
 	String  id = "402880e74a2f2fd8014a2f2fdb1b0000";
 	
 	
-	//@Test
+	@Test
 	public void testInsert() {
 		JeecgDemo jeecgDemo = new JeecgDemo();
 		jeecgDemo.setAge(30);
@@ -47,7 +47,7 @@ public class JeecgDemoDaoJunit extends SpringTxTestCase {
 	}
 
 
-	//@Test
+	@Test
 	public void testGetEntity() {
 		JeecgDemo jeecgDemo = jeecgDemoService.getByIdHiber(JeecgDemo.class,id);
 		if(jeecgDemo!=null){
@@ -70,7 +70,7 @@ public class JeecgDemoDaoJunit extends SpringTxTestCase {
 	}
 	
 
-	//@Test
+	@Test
 	public void testListAll() {
 		JeecgDemo jeecgDemo = new JeecgDemo();
 		List<JeecgDemo> list = jeecgDemoService.listByHiber(jeecgDemo);

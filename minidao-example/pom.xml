@@ -1,12 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.jeecg</groupId>
+
 	<artifactId>minidao-example</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>cn.thinkit</groupId>
+		<artifactId>pisces-mini-dao</artifactId>
+		<version>${sm.version}</version>
+	</parent>
+
 	<properties>
-		<minidao.version>1.5.1</minidao.version>
 		<antlr.version>3.3</antlr.version>
 		<aopalliance.version>1.0</aopalliance.version>
 		<aspectj.version>1.6.9</aspectj.version>
@@ -37,50 +42,6 @@
 		<ognl.version>2.6.11</ognl.version>
 		<spring.version>3.1.1.RELEASE</spring.version>
 	</properties>
-
-	<repositories>
-		<repository>
-			<id>central</id>
-			<name>Central Repository</name>
-			<url>http://repo.maven.apache.org/maven2</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>oschina-maven</id>
-			<name>com.springsource.org.junit</name>
-			<url>http://maven.oschina.net/content/groups/public/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-
-		<repository>
-			<id>spy</id>
-			<name>Spy Repository</name>
-			<url>http://files.couchbase.com/maven2/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>xerces</id>
-			<name>xerces</name>
-			<url>https://xerces.apache.org/xerces2-j/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>proxool</id>
-			<name>proxool</name>
-			<url>http://proxool.cvs.sourceforge.net/viewvc/proxool/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -287,9 +248,9 @@
 			<version>${ognl.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.jeecgframework</groupId>
+			<groupId>cn.thinkit</groupId>
 			<artifactId>minidao</artifactId>
-			<version>${minidao.version}</version>
+			<version>${sm.version}</version>
 		</dependency>
 		<!-- slf4j -->
 		<dependency>
